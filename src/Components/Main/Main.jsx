@@ -7,7 +7,7 @@ import {
   Divider,
   CardContent,
 } from "@material-ui/core";
-import { mergeClasses } from "@material-ui/styles";
+
 import { ExpenseTrackerContext } from "../../context/context";
 
 import useStyles from "./styles";
@@ -31,7 +31,7 @@ const Main = () => {
         >
           <InfoCard />
         </Typography>
-        <Divider />
+        <Divider className={classes.divider} />
         <Form />
       </CardContent>
       <CardContent className={classes.cardContent}>
